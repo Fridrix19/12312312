@@ -1,8 +1,25 @@
-
+.page1{
+    
+}
+.page2{
+    
+}
+.page3{
+   
+}
 .page4{
     display: none;
 }
 
+.page6{
+    
+}
+.page7{
+    
+}
+.page8{
+    
+}
 
 
 @media (max-width: 1200px) {
@@ -195,7 +212,7 @@
             color: #F6C26B;
             cursor: pointer;
             transition: .3s;
-            font-size: 13px;
+            font-size: 15px;
         }
         .page5nav {
             display: flex;
@@ -295,12 +312,3 @@
     display: none;
 }
 }
-
-/* mobile.css  или @media прямо в animation.css */
-@media (max-width:768px){
-    .reveal{
-      transform:translateY(30px);
-      transition:opacity .45s ease, transform .45s ease;
-    }
-  }
-  

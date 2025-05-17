@@ -108,6 +108,20 @@ a {
     display: flex;
 }
 
+.buttonmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 52px;
+    border-radius: 100px;
+    background: linear-gradient(96deg, #F6C26B -17.38%, #E7C78E 18.57%, #CAA766 36.55%, #F3DCBB 46.23%, #D1A354 79.43%, #F2D7AB 87.73%);
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif;
+    margin-right: 10px;
+}
 
 .arrow {
     font-size: 20px;
@@ -124,6 +138,22 @@ a {
     background: linear-gradient(113deg, #F6C26B -21.44%, #E7C78E 38%, #CAA766 67.72%, #F3DCBB 83.73%, #D1A354 138.59%, #F2D7AB 152.31%);
 }
 
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+}
 
 .loader-logo {
     width: 120px;
@@ -150,7 +180,27 @@ a {
     animation: metallicShine 4s ease-in-out infinite;
 }
 
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+}
 
+.preloader.hide {
+    transform: translatey(300%);
+    opacity: 0;
+    pointer-events: none;
+}
 
 #three-container {
     width: 338px;
@@ -367,6 +417,7 @@ h3 {
 
 
 .page4 {
+    display: flex;
     display: none;
     align-items: center;
     flex-direction: column;
